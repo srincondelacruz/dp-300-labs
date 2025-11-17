@@ -1,4 +1,4 @@
-⛓️ LAB 08: Identificación y Resolución de Problemas de Bloqueo
+⛓️ LAB 11: Identificación y Resolución de Problemas de Bloqueo
 🎯 Objetivo
 Identificar y resolver problemas de rendimiento causados por bloqueos de transacciones (blocking) en SQL Server. Se utilizarán Extended Events (Eventos Extendidos) y Vistas de Gestión Dinámica (DMVs) para diagnosticar el bloqueo y se implementará Read Committed Snapshot Isolation (RCSI) como solución.
 

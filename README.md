@@ -21,6 +21,15 @@ El repositorio está organizado por el número de laboratorio para facilitar la 
 * **[LAB 08: Tablas Temporales y T-SQL Avanzado](./Lab%2008/)**
     * *Objetivo: Uso e implementación de T-SQL avanzado y estructuras de tablas temporales para optimización.*
 
+* **[LAB 09: Cuestionario de Monitorización](./LAB_09_PREGUNTAS.md)**
+    * *Objetivo: Responder a preguntas teóricas clave sobre monitorización, optimización de TempDB, tipos de disco y Resource Governor.*
+  
+* **[LAB 10: Aislamiento de Problemas de Fragmentación](./Lab%2010/)**
+    * *Objetivo: Identificar y resolver la fragmentación de índices mediante DMVs y `ALTER INDEX REBUILD`.*
+  
+* **[LAB 11: Identificación y Resolución de Bloqueos](./Lab%2011/)**
+    * *Objetivo: Diagnosticar bloqueos de transacciones usando Extended Events y DMVs, y resolverlos con `READ_COMMITTED_SNAPSHOT`.*
+  
 * **[Próximos LABs]**
     * *Se añadirán las soluciones para la optimización de queries, auditoría y análisis de rendimiento.*
 
@@ -30,4 +39,5 @@ El repositorio está organizado por el número de laboratorio para facilitar la 
 
 * **Seguridad:** Implementación de DDM, ATP, y gestión de permisos con T-SQL.
 * **Administración:** Uso de herramientas de Azure Portal y SSMS.
+* **Optimización de Rendimiento:** Diagnóstico de fragmentación, bloqueos y uso de CPU.
 * **Desarrollo SQL:** Dominio de T-SQL para manipulación y administración de datos.
