@@ -1,4 +1,4 @@
-# Laboratorio 12: Identificación y resolución de problemas de rendimiento en SQL Server
+# Laboratorio 13: Identificación y resolución de problemas de rendimiento en SQL Server
 
 ## Objetivo
 Identificar las áreas problemáticas en las consultas con bajo rendimiento en una base de datos SQL.
@@ -47,13 +47,15 @@ WITH RECOVERY,
         TO 'C:\LabFiles\AdventureWorks2017_log.ldf';
 ```
 
+📸 **Captura 5:** ![Base de datos restaurada correctamente](foto5.png)
+
 ---
 
 ## III. Generar plan de ejecución real
 
 ### 4. Usar SHOWPLAN_ALL para ver el plan de ejecución en texto
 
-📸 **Captura 6:** ![Ejecución de SHOWPLAN_ALL](foto6.png)
+
 ```sql
 USE AdventureWorks2017;
 GO
@@ -69,8 +71,8 @@ GO
 SET SHOWPLAN_ALL OFF;
 GO
 ```
+📸 **Captura 6:** ![Ejecución de SHOWPLAN_ALL](foto6.png)
 
-📸 **Captura 7:** ![Plan de ejecución en formato texto](foto7.png)
 
 ---
 
@@ -78,7 +80,6 @@ GO
 
 ### 5. Ejecutar consulta con plan de ejecución gráfico
 
-📸 **Captura 8:** ![Consulta con búsqueda por clave](foto8.png)
 
 Habilita el plan de ejecución real (`Ctrl+M`) y ejecuta:
 ```sql
@@ -89,11 +90,11 @@ FROM [AdventureWorks2017].[Sales].[SalesOrderDetail]
 WHERE [ModifiedDate] > '2012/01/01' AND [ProductID] = 772;
 ```
 
-📸 **Captura 9:** ![Análisis del operador Key Lookup](foto9.png)
+📸 **Captura 7:** ![Plan de ejecución en formato texto](foto7.png)
 
 ### 6. Mejorar el índice para eliminar Key Lookup
 
-📸 **Captura 10:** ![Recreación del índice mejorado](foto10.png)
+
 ```sql
 CREATE NONCLUSTERED INDEX [IX_SalesOrderDetail_ProductID]
 ON [Sales].[SalesOrderDetail] ([ProductID],[ModifiedDate])
@@ -110,7 +111,7 @@ GO
 
 ### 7. Habilitar Query Store
 
-📸 **Captura 12:** ![Habilitación de Query Store](foto12.png)
+
 ```sql
 USE [master];
 GO
@@ -124,10 +125,10 @@ GO
 ALTER DATABASE [AdventureWorks2017] SET COMPATIBILITY_LEVEL = 100;
 GO
 ```
+📸 **Captura 13:** ![Ejecución del generador de carga](foto13.png)
 
 ### 8. Generar carga de trabajo
 
-📸 **Captura 13:** ![Ejecución del generador de carga](foto13.png)
 
 - Abre `C:\LabFiles\dp-300-database-administrator\Allfiles\Labs\10\CreateRandomWorkloadGenerator.sql`
 - Ejecuta el script
