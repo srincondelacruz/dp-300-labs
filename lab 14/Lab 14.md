@@ -142,13 +142,9 @@ Si creó un nuevo grupo de recursos para este laboratorio, puede eliminar el gru
 
 2. Acceda al grupo de recursos que creó para este laboratorio.
 
-![foto8.png](foto8.png)
-
 3. Seleccione **Eliminar grupo de recursos** en el menú superior.
 
 4. En el cuadro de diálogo **Eliminar grupo de recursos**, escriba el nombre del grupo de recursos para confirmar y seleccione **Eliminar**.
-
-![foto9.png](foto9.png)
 
 5. Espere a que se elimine el grupo de recursos y cierre el portal de Azure.
 
@@ -160,15 +156,13 @@ Si no creó un nuevo grupo de recursos para este laboratorio y desea dejar el gr
 
 2. Seleccione todos los recursos que tengan como prefijo el nombre de SQL Server que especificó previamente en el laboratorio.
 
-![foto10.png](foto10.png)
-
 3. Seleccione **Eliminar** en el menú superior.
 
 4. En el cuadro de diálogo **Eliminar recursos**, escriba `eliminar` y seleccione **Eliminar**.
 
-![foto11.png](foto11.png)
-
 5. Confirme la eliminación y espere a que se eliminen los recursos. Cierre el portal de Azure.
+
+![foto8.png](foto8.png)
 
 ---
 
