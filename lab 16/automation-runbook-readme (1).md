@@ -79,13 +79,13 @@ cd ./Setup
 > - Puede personalizar estos valores usando los parámetros: `-rgName`, `-location` y `-sqlAdminPw`
 > - El script agregará su dirección IP pública actual a las reglas de firewall del servidor SQL
 
-> ⚠️ **IMPORTANTE:** Si el script falla (es normal según el profesor), deberás crear los recursos manualmente desde Azure Portal:
+> ⚠️ **IMPORTANTE:** Si el script falla, deberás crear los recursos manualmente desde Azure Portal:
 > 1. Crea un grupo de recursos llamado `contoso-rg`
 > 2. Crea un Azure SQL Server en ese grupo
 > 3. Crea una base de datos llamada `AdventureWorksLT` en ese servidor
 > 4. Anota el nombre del servidor, usuario admin (ej: `sqladmin`) y la contraseña que establezcas
 
-4. Una vez completado el script (o creados manualmente), **anote los siguientes valores** (los necesitará más adelante):
+1. Una vez completado el script (o creados manualmente), **anote los siguientes valores** (los necesitará más adelante):
    - Nombre del grupo de recursos
    - Nombre del servidor SQL
    - Nombre de la base de datos
